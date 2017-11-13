@@ -1,0 +1,23 @@
+group 'com.mjie'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+ext {
+    logbackVersion = "1.2.3"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            "ch.qos.logback:logback-classic:$logbackVersion"
+    )
+
+}
